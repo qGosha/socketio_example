@@ -4,21 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Join</title>
+  <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
-  <h1>Hello Chat</h1>
-
-  <ol id='messages'></ol>
-  <form id="message-form">
-    <input name='message' type="text" placeholder="type your message"/>
-    <button>Send</button>
-  </form>
-  <script src="/socket.io/socket.io.js"></script>
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-  <script src="/js/index.js"></script>
+<body class="centered-form">
+  <div class="centered-form__form">
+    <form action="/chat.html">
+      <div class="form-field">
+        <h3>Join a chat</h3>
+      </div>
+      <div class="form-field">
+        <label for="">Display name</label>
+        <input type="text" name="name" autofocus>
+      </div>
+      <div class="form-field">
+        <label for="">Room name</label>
+        <input type="text" name="room">
+      </div>
+      <div class="form-field">
+        <button>Join</button>
+      </div>
+    </form>
+  </div>
 </body>
 </html>
